@@ -8,25 +8,25 @@ import { Link } from 'react-router-dom';
 const ProductIndex = () => {
     return (
         <div className="productIndex">
-            {data.products.map(product => (
-                <div className="productIndex__card" key={product.id}>
+            {Object.entries(data).map(([productID, { name, image, price, description, id }]) => (
+                <div className="productIndex__card" key={id}>
                     <div className="productIndex__titleAndImage">
-                        <h3>{product.title}</h3>
-                        <img src={product.image} alt={product.title} />
+                        <h3>{name}</h3>
+                        <img src={image} alt={name} />
                     </div>
                     <div>
                         <div className="productIndex__description">
                             <h3>Description</h3>
                             <div className="underline"></div>
-                            <p>{product.description}</p>
+                            <p>{description}</p>
                         </div>
                         <div className="productIndex__priceAndDetail">
                             <p>
-                                ${product.price}
+                                ${price}
                             </p>
                         </div>
                         <div className="productIndex__btn">
-                            <Link to=":productID">
+                            <Link to={productID}>
                                 <button>Details</button>
                             </Link>
                             {/* <Link to="cart">

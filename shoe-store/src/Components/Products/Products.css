@@ -1,3 +1,7 @@
+body {
+    background-color: lightgray;
+}
+
 .products {
     width: 70%;
     margin: 0 auto;
@@ -28,15 +32,16 @@
 }
 
 .productIndex__card {
+    background-color: rgba(255, 255, 255, 0.9);
     border: 3px solid black;
     margin: 20px 0px;
     display: flex;
-    padding: 30px;
+    padding: 20px;
     border-radius: 5px;
 }
 
 .productIndex__titleAndImage {
-    width: 80%;
+    width: 100%;
     padding: 10px;
     margin-right: 20px;
 }
@@ -47,7 +52,7 @@
 }
 
 .productIndex__titleAndImage img {
-    height: 200px;
+    height: 230px;
     width: 100%;
     object-fit: cover;
 }
@@ -74,4 +79,50 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.productIndex__btn button {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 100%;
+    background: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.productIndex__btn button:hover {
+    background-color: rgb(230, 228, 228);
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 1000px) {
+    .products {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .products h1 {
+        letter-spacing: 8px;
+        text-transform: uppercase;
+    }
+    .productIndex__card {
+        flex-direction: column;
+    }
+    .productIndex__card {
+        padding: 10px;
+    }
+    .productIndex__titleAndImage {
+        width: 100%;
+    }
+    .productIndex__priceAndDetail {
+        width: 100%;
+    }
+    .productIndex__description p {
+        font-size: 15px;
+    }
+    .productIndex__btn button {
+        padding: 6px 16px;
+    }
 }
