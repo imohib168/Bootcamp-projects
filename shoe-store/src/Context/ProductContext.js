@@ -9,10 +9,8 @@ const initialState = [];
 export const ContextProvider = ({ children }) => {
 
     let [state, dispatch] = useReducer(ProductReducer, initialState);
-    // console.log(state);
 
     const addToCart = (itemObj) => {
-        // console.log(itemObj);
         dispatch({
             type: 'ADD_ITEM',
             payload: {

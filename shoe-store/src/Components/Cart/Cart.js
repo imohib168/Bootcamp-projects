@@ -5,7 +5,6 @@ import './Cart.css'
 const Cart = () => {
 
     let { state, deleteFromCart } = useContext(productContext);
-    console.log(state);
 
     const EmptyCart = () => {
         return (
