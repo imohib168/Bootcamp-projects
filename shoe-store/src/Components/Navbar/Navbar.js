@@ -1,12 +1,8 @@
 import React, { useState, useContext } from 'react';
 import nike from './../../images/nike.png';
-
 import { Link } from 'react-router-dom';
-
 import './Navbar.css';
-
 import { productContext } from './../../Context/ProductContext';
-
 
 const Navbar = () => {
     const { state } = useContext(productContext);
