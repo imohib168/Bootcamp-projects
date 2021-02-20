@@ -1,11 +1,11 @@
-import React from 'react';
-
-import { data } from './../../Items';
-
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-
+import { productContext } from './../../Context/ProductContext';
 
 const ProductIndex = () => {
+
+    const { data } = useContext(productContext);
+
     return (
         <div className="productIndex">
             {Object.entries(data).map(([productID, { name, image, price, description, id }]) => (
@@ -29,9 +29,6 @@ const ProductIndex = () => {
                             <Link to={productID}>
                                 <button>Details</button>
                             </Link>
-                            {/* <Link to="cart">
-                                <button className="productIndex__btn">Add to Cart</button>
-                            </Link> */}
                         </div>
                     </div>
                 </div>

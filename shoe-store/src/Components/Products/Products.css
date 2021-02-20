@@ -93,6 +93,10 @@ body {
     border: 2px solid black;
 }
 
+button:nth-child(1) {
+    margin-right: 10px;
+}
+
 .productIndex__btn button:hover {
     background-color: rgb(230, 228, 228);
     transition: all 0.5s ease-in-out;
@@ -123,6 +127,110 @@ body {
         font-size: 15px;
     }
     .productIndex__btn button {
+        width: 100%;
+        margin: 4px 0px;
         padding: 6px 16px;
+    }
+}
+
+/* Product Details */
+
+.productDetail {
+    margin-top: 60px;
+    padding: 10px;
+    /*  */
+    display: flex;
+}
+
+.productDetail__image {
+    margin-right: 20px;
+}
+
+.productDetail img {
+    height: 400px;
+    width: 450px;
+    object-fit: cover;
+}
+
+.productDetail__info {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.productDetail__info h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nd {
+    margin: 10px 2px;
+    width: 150px;
+    height: 3px;
+    background-color: black;
+}
+
+.productDetail__description {
+    margin: 30px;
+}
+
+.nd1 {
+    margin: 10px 0px;
+    width: 80px;
+    height: 3px;
+    background-color: black;
+}
+
+.productDetail__price {
+    background: rgb(252, 199, 179);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    width: 20%;
+    padding: 5px 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productDetail__btn {
+    margin: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 7px 12px;
+    font-size: 18px;
+    width: 30%;
+    background: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.productDetail__btn:hover {
+    background-color: rgb(230, 228, 228);
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 900px) {
+    .productDetail {
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    .productDetail img {
+        height: 200px;
+        width: 100%;
+    }
+    .productDetail__image {
+        margin-right: 0px;
+    }
+    .productDetail__btn {
+        margin: 10px 0px;
+        width: 100%;
+    }
+    .productDetail__price {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .productDetail__description {
+        margin: 30px 0px;
     }
 }
