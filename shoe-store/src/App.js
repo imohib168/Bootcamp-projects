@@ -7,6 +7,7 @@ import Products from './Components/Products/Products';
 import Cart from './Components/Cart/Cart';
 import ProductIndex from './Components/Products/ProductIndex';
 import ProductDetail from './Components/Products/ProductDetail';
+import PageNotFound from './Components/NotFound/PageNotFound';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -23,6 +24,7 @@ const App = () => {
                         <Route path=":productID" element={<ProductDetail />}></Route>
                     </Route>
                     <Route path="cart" element={<Cart />}></Route>
+                    <Route path="*" element={<PageNotFound />}></Route>
                 </Routes>
             </Router>
         </div>

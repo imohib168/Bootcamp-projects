@@ -38,7 +38,12 @@ const Cart = () => {
                                             <div>
                                                 <p className="cartItem__name">{item.name}</p>
                                                 <p className="cartItem__price">${item.price}</p>
-                                                <button className="cartItem__btn" onClick={() => deleteFromCart(item.id)}>Delete from Cart</button>
+                                                <button
+                                                    className="cartItem__btn"
+                                                    onClick={() => deleteFromCart(item.id)}
+                                                >
+                                                    Delete from Cart
+                                                    </button>
                                             </div>
                                         </div>
                                     )
