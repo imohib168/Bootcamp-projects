@@ -1,0 +1,24 @@
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.content .svgImage {
+    /* background: white; */
+    transform: rotate(-15deg);
+}
+
+.content .about {
+    width: 40%
+}
+
+.content .about p {
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-size: 30px;
+    line-height: 50px;
+}
