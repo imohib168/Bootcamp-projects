@@ -7,7 +7,10 @@ const Header = () => {
         <div className="header">
             <div className="logo">
                 Giant
-                    </div>
+            </div>
+            <div className="hamburger">
+                <i className="fa fa-bars"></i>
+            </div>
             <div className="navItems">
                 <ul>
                     <li><a className="navItem">Home</a></li>

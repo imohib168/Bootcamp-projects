@@ -22,3 +22,20 @@
     font-size: 30px;
     line-height: 50px;
 }
+
+@media (max-width: 1000px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 80vh;
+    }
+    .content .about p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .content .about {
+        width: 80%
+    }
+}

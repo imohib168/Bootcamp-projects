@@ -53,3 +53,23 @@
 .navItem:hover::after {
     width: 100%;
 }
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .header {
+        width: 100%;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hamburger .fa {
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .navItems {
+        display: none;
+    }
+}

@@ -3,6 +3,7 @@ import React from "react";
 function Svg({ rightWheel, leftWheel, manOnBike, cap }) {
     return (
         <svg
+            className="svgBike"
             xmlns="http://www.w3.org/2000/svg"
             width="600"
             height="600"

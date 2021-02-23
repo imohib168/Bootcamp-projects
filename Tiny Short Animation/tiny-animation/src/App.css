@@ -43,3 +43,24 @@
     bottom: 10%;
     right: 6%;
 }
+
+@media (max-width: 1000px) {
+    .glass {
+        height: auto;
+        padding: 0px 0px 15px 0px;
+    }
+    .circle1, .circle2 {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(to bottom right, rgb(3, 245, 193), rgb(151, 197, 250));
+        position: absolute;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        z-index: 2;
+    }
+    .svgBike {
+        z-index: -1;
+        height: 350px;
+        width: 350px;
+    }
+}
