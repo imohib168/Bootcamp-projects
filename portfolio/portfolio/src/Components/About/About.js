@@ -8,6 +8,7 @@ import {
     Heading,
     ParagraphDesc,
     ImageWrapper,
+    ToContact
 } from './About.elements';
 
 const About = () => {
@@ -19,7 +20,11 @@ const About = () => {
                     <DescriptionContainer>
                         <Heading>Hello, I'm Mohib Ismail</Heading>
                         <ParagraphDesc>Lorem ipsum dolor sit amet consectetur adipisicing elit. In cum nemo et consequuntur laudantium. Repellat, a totam temporibus praesentium expedita magnam non numquam fuga incidunt? Odit ad quae blanditiis. Soluta.</ParagraphDesc>
-                        <Button>Contact</Button>
+                        <ToContact href="#contact">
+                            <Button>
+                                Contact
+                            </Button>
+                        </ToContact>
                     </DescriptionContainer>
                     <ImageWrapper>
                         <AboutImage />

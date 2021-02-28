@@ -7,6 +7,10 @@ import {
     homeObjFour,
     homeObjFive,
     homeObjSix,
+    homeObjSeven,
+    homeObjEight,
+    homeObjNine,
+    homeObjTen,
 } from './Data';
 
 const ReactProjects = () => {
@@ -18,6 +22,10 @@ const ReactProjects = () => {
             <InfoSection {...homeObjFour} />
             <InfoSection {...homeObjFive} />
             <InfoSection {...homeObjSix} />
+            <InfoSection {...homeObjSeven} />
+            <InfoSection {...homeObjEight} />
+            <InfoSection {...homeObjNine} />
+            <InfoSection {...homeObjTen} />
         </>
     )
 }

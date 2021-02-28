@@ -1,86 +1,140 @@
-import periodicTable from './../../Images/ProjectImages/PeriodicTable.png';
-import RegForm from './../../Images/ProjectImages/RegistrationForm.png';
-import SaylaniHome from './../../Images/ProjectImages/SaylaniHome.png';
-import Pizzagenix from './../../Images/ProjectImages/Pizzagenix.png';
-import portfolio from './../../Images/ProjectImages/portfolio.png';
-import portfolio1 from './../../Images/ProjectImages/portfolio1.png';
+import SimpleExpenseTracker from './../../Images/ProjectImages/SimpleExpenseTracker.png';
+import ComplexExpenseTracker from './../../Images/ProjectImages/ComplexExpenseTracker.png';
+import CovidTracker from './../../Images/ProjectImages/CovidTracker.png';
+import ShoesStore from './../../Images/ProjectImages/ShoeStore.png';
+import RedQueen from './../../Images/ProjectImages/RedQueen.png';
+import TinyAnimation from './../../Images/ProjectImages/TinyAnimation.png';
+import AmazonClone from './../../Images/ProjectImages/AmazClone.png';
+import InstagramClone from './../../Images/ProjectImages/InstagramClone.png';
+import NetflixClone from './../../Images/ProjectImages/NetflixClone.png';
+import MovieApp from './../../Images/ProjectImages/MovieApp.png';
 
 export const homeObjOne = {
     primary: true,
-    topLine: 'HTML & CSS',
+    topLine: 'React',
     headline:
-        'Periodic Table',
+        'Simple Expense Tracker',
     buttonLabel: 'Preview',
     imgStart: true,
-    img: periodicTable,
-    alt: 'Periodic Table',
+    img: SimpleExpenseTracker,
+    alt: 'Expense Tracker',
     start: true,
-    projectLink: 'https://periodic-table-d9308.web.app/',
+    projectLink: 'https://expense-tracker-0192.netlify.app/',
 };
 
 export const homeObjTwo = {
     primary: true,
-    topLine: 'HTML & CSS',
+    topLine: 'React',
     headline:
-        'Student Registration Form',
+        'Complex Expense Tracker',
     buttonLabel: 'Preview',
     imgStart: true,
-    img: RegForm,
-    alt: 'Student Registration Form',
+    img: ComplexExpenseTracker,
+    alt: 'Expense Tracker',
     start: true,
-    projectLink: 'https://student-registration-for-9081b.web.app/'
+    projectLink: 'https://expense_tracker_168.surge.sh/',
 };
 
 export const homeObjThree = {
     primary: true,
-    topLine: 'HTML & CSS',
+    topLine: 'React',
     headline:
-        'Saylani Home Page',
+        'Covid19 Tracker',
     buttonLabel: 'Preview',
     imgStart: true,
-    img: SaylaniHome,
-    alt: 'Saylani Home Page',
+    img: CovidTracker,
+    alt: 'Covid Tracker',
     start: true,
-    projectLink: 'https://saylani-home-page-ffd98.web.app/'
+    projectLink: 'https://covid19-tracker-by-mohib.surge.sh/',
 };
 
 export const homeObjFour = {
     primary: true,
-    topLine: 'HTML & CSS',
+    topLine: 'React',
     headline:
-        'Pizzagenix (Using Bootstrap)',
+        'Nike Shoes Store',
     buttonLabel: 'Preview',
     imgStart: true,
-    img: Pizzagenix,
-    alt: 'Pizzagenix (Frontend UI using Bootstrap)',
+    img: ShoesStore,
+    alt: 'Shoes Store',
     start: true,
-    projectLink: 'https://pizzagenix-168.web.app/'
+    projectLink: 'https://nike-store-by-mohib.surge.sh/',
 };
-
 
 export const homeObjFive = {
     primary: true,
-    topLine: 'HTML & CSS',
+    topLine: 'React',
     headline:
-        'Simple Portfolio',
+        'Alice Red Queen (Animation)',
     buttonLabel: 'Preview',
     imgStart: true,
-    img: portfolio,
-    alt: 'Simple Porfolio',
+    img: RedQueen,
+    alt: 'Alice Red Queen',
     start: true,
-    projectLink: 'https://simple-portfolio-6b6.surge.sh/'
+    projectLink: 'https://alice-red-queen-animation-by-mohib.surge.sh/',
 };
-
 
 export const homeObjSix = {
     primary: true,
-    topLine: 'HTML & CSS',
+    topLine: 'React',
     headline:
-        'Portfolio (Using Bootstrap)',
+        'Tiny Animation (Web Animation API)',
     buttonLabel: 'Preview',
     imgStart: true,
-    img: portfolio1,
-    alt: 'portfolio',
+    img: TinyAnimation,
+    alt: 'Tiny Animation (Web Animation API)',
     start: true,
-    projectLink: 'https://portfolio-168.web.app/'
+    projectLink: 'https://react-animation-by-mohib.surge.sh/',
+};
+
+export const homeObjSeven = {
+    primary: true,
+    topLine: 'React',
+    headline:
+        'Amazon Clone',
+    buttonLabel: 'Preview',
+    imgStart: true,
+    img: AmazonClone,
+    alt: 'Amazon Clone',
+    start: true,
+    projectLink: 'https://amaz-clone-168.web.app/',
+};
+
+export const homeObjEight = {
+    primary: true,
+    topLine: 'React',
+    headline:
+        'Instagram Clone',
+    buttonLabel: 'Preview',
+    imgStart: true,
+    img: InstagramClone,
+    alt: 'Instagram Clone',
+    start: true,
+    projectLink: 'https://instagram-clone-168.web.app/',
+};
+
+export const homeObjNine = {
+    primary: true,
+    topLine: 'React',
+    headline:
+        'Netflix Clone',
+    buttonLabel: 'Preview',
+    imgStart: true,
+    img: NetflixClone,
+    alt: 'Netflix Clone',
+    start: true,
+    projectLink: 'https://netflix-clone-168.web.app/',
+};
+
+export const homeObjTen = {
+    primary: true,
+    topLine: 'React',
+    headline:
+        'Add Movie App',
+    buttonLabel: 'Preview',
+    imgStart: true,
+    img: MovieApp,
+    alt: 'Add Movie App',
+    start: true,
+    projectLink: 'https://add-movie-app-by-mohib.surge.sh/',
 };

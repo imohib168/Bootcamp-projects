@@ -73,3 +73,11 @@ export const ImageWrapper = styled.div`
         width: 300px;
     }
 `;
+
+export const ToContact = styled.a`
+    text-decoration: none;  
+
+    &:hover {
+        color: black;
+    }
+`
