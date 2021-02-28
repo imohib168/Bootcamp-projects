@@ -15,7 +15,7 @@ export const SkillsRow = styled.div`
 
     @media screen and (max-width: 950px) {
         flex-direction: column;
-        justify-content: start;
+        justify-content: flex-start;
     }
 `
 
@@ -25,8 +25,8 @@ export const ImageWrapper = styled.div`
     height: 600px;
     width: 600px;
 
-    @media screen and (max-width: 950px) {
-        margin-bottom: 40px;
+    @media screen and (max-width: 1100px) {
+        margin-bottom: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -52,6 +52,10 @@ export const Skill = styled.div`
     display: flex;
     flex-direction: column;
     padding: 15px;
+
+    @media screen and (max-width: 800px) {
+        padding: 10px;
+    }
 `
 export const SkillName = styled.p`
     font-family: monospace;

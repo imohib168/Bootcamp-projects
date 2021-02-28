@@ -13,7 +13,7 @@ export const AboutRow = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 800px) {
         flex-direction: column;
         justify-content: start;
     }
@@ -44,7 +44,7 @@ export const Heading = styled.h1`
 
 export const ParagraphDesc = styled.p`
     font-size: 24px;
-    width: 90%;
+    width: 90%;  
     line-height: 35px;
     letter-spacing: 3px;
     color: rgb(195,195,195);
