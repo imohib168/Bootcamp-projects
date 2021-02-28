@@ -5,7 +5,7 @@ export const AboutSec = styled.div`
     background: linear-gradient(to bottom right, rgb(0, 43, 43), rgb(0,0,0));
 
     @media screen and (max-width: 1000px) {
-        background: linear-gradient(to top right, rgba(0, 0, 0, .8), rgb(0, 43, 43));
+        background: linear-gradient(to top right, rgb(0, 0, 0), rgb(0, 43, 43));
     }
 `
 export const AboutRow = styled.div`
@@ -71,11 +71,17 @@ export const ImageWrapper = styled.div`
         align-items: center;
         height: 200px;
         width: 300px;
+        z-index: 1;
     }
 `;
 
 export const ToContact = styled.a`
     text-decoration: none;  
+
+    @media screen and (max-width: 900px) {
+        margin-bottom: 60px;
+        z-index: 2;
+    }
 
     &:hover {
         color: black;

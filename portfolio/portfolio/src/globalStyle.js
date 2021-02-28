@@ -41,6 +41,7 @@ export const Button = styled.button`
     letter-spacing: 6px;
     font-weight: bold;
     color: rgb(165,165,15);
+    z-index: 2;
 
     &:hover {
         border: 2px solid transparent;

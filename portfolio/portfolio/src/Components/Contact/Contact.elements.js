@@ -9,7 +9,7 @@ export const AboutSec = styled.div`
     background: linear-gradient(to bottom right, rgb(0, 43, 43), rgb(0,0,0));
 
     @media screen and (max-width: 1024px) {
-        background: linear-gradient(to top right, rgba(0, 0, 0, .8), rgb(0, 43, 43));
+        background: linear-gradient(to top right, rgb(0, 0, 0), rgb(0, 43, 43));
     }
 `
 export const AboutRow = styled.div`
@@ -48,6 +48,7 @@ export const ImageWrapper = styled.div`
 
     @media screen and (max-width: 1024px) {
         margin-left: 60px;
+        margin-top: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -86,20 +87,25 @@ export const Email = styled.p`
 export const SocialAccountsIcons = styled.div`
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     flex-direction: row;
     margin: 20px 0px;
 
     @media screen and (max-width: 1024px) {
-        width: 60%;
-        margin: 20px auto;
+        /* z-index: 999; */
+        /* width: 60%;
+        margin: 20px auto; */
+        justify-content: center;
     }
 `
+
 export const Icon = styled.a`
-    padding: 3px;
+    padding: 2px;
     text-decoration: none;
+    z-index: 999;
 
     &:not(:nth-child(1)) {
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     &:nth-child(1) {

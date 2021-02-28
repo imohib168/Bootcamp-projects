@@ -48,7 +48,7 @@ export const homeObjFour = {
     primary: false,
     topLine: 'HTML CSS & JS',
     headline:
-        'Todo Application',
+        'To-do App',
     buttonLabel: 'Preview',
     imgStart: false,
     img: Todo,
@@ -89,7 +89,7 @@ export const homeObjSeven = {
     primary: false,
     topLine: 'HTML CSS & JS',
     headline:
-        'Todo App with Firebase',
+        'To-do App with Firebase',
     buttonLabel: 'Preview',
     imgStart: false,
     img: Todo,

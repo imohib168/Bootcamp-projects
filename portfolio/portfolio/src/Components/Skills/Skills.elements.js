@@ -5,7 +5,7 @@ export const SkillsSec = styled.div`
     background: linear-gradient(to bottom right, rgb(0, 43, 43), rgb(0,0,0));
 
     @media screen and (max-width: 960px) {
-        background: linear-gradient(to top right, rgba(0, 0, 0, .8), rgb(0, 43, 43));
+        background: linear-gradient(to top right, rgb(0, 0, 0), rgb(0, 43, 43));
     }
 `
 export const SkillsRow = styled.div`

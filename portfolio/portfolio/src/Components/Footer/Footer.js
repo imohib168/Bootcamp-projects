@@ -5,7 +5,7 @@ import { FooterWrapper } from './Footer.elements';
 const Footer = () => {
     return (
         <FooterWrapper>
-            Made By Mohib Ismail 🖤
+            Made By Mohib Ismail
         </FooterWrapper>
     )
 }
