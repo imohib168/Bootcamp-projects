@@ -1,0 +1,150 @@
+* {
+    font-family: Arial;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right bottom, #43cea2, #185a9d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.submitBtn, .nextBtn, .againStartBtn {
+    background: linear-gradient(to left, #b3f8e2, transparent);
+    border: none;
+    padding: 8px 50px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: Verdana;
+    outline: none;
+}
+
+.submitBtn:hover, .againStartBtn:hover {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    background-color: #185a9d;
+}
+
+.mainContainer {
+    background: rgb(187, 223, 255);
+    background: linear-gradient(to left bottom, #ffffff, transparent);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.main h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(2, 71, 94);
+    font-weight: 500;
+}
+
+.main h2 {
+    letter-spacing: 2px;
+    font-size: 17px;
+}
+
+.questionCard {
+    padding: 10px;
+}
+
+.question {
+    background: #fff;
+    background: linear-gradient(to left, #fff, transparent);
+    width: 800px;
+    padding: 10px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.label {
+    background: #fff;
+    background: linear-gradient(to right, #b3f8e2, transparent);
+    display: block;
+    margin: 10px 0px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.option {
+    margin-left: 10px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btnWrapper {
+    text-align: right;
+}
+
+.nextBtn {
+    background: #46d6a9;
+    background: linear-gradient(to left, #b3f8e2, transparent);
+    border: none;
+    margin: 20px 0px;
+    padding: 5px 10px;
+}
+
+.nextBtn:hover {
+    transition: all 0.5s ease-in-out;
+    background-color: rgb(247, 162, 162);
+}
+
+.scoreCard {
+    text-align: center;
+}
+
+.scoreCard h2 {
+    background: linear-gradient(to right, #b3f8e2, transparent);
+    padding: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+.scoreCard h2:hover {
+    color: yellow;
+    transition: all 0.5s ease-in-out;
+    background-color: #185a9d;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background: linear-gradient(to bottom, #43cea2, #185a9d);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .mainContainer {
+        /* width: 300px; */
+        padding: 10px;
+        /* height: 100%; */
+    }
+    .main {
+        flex-direction: column;
+    }
+    .question {
+        width: 100%;
+    }
+    .main h1 {
+        margin-bottom: 20px;
+    }
+    .label {
+        width: 100%;
+    }
+    .againStartBtn {
+        font-size: 14px;
+    }
+}

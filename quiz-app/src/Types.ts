@@ -1,6 +1,6 @@
 import { FormEvent } from "react"
 
-export type QuestionType = {
+export type QuizQuestion = {
     category: string
     correct_answer: string
     difficulty: string
@@ -11,13 +11,13 @@ export type QuestionType = {
 
 export type Quiz = {
     question: string
-    answer: string
-    option: string[]
+    // answer: string
+    options: string[]
     correct_answer: string
 }
 
-export type QuizProps = {
+export type QuizQuestionProps = {
     options: string[]
     question: string
-    callback: (e: FormEvent<EventTarget>) => void;
+    callback: (e: FormEvent<EventTarget>, ans: string) => void;
 }

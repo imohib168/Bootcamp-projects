@@ -1,24 +1,34 @@
-import React from 'react';
-import { QuizProps } from './../Types/quizTypes';
+import React, { FormEvent, useState } from 'react';
+import { QuizQuestionProps } from './../Types';
 
-const QuestionCard: React.FC<QuizProps> = ({ options, question, callback }) => {
+const QuestionCard: React.FC<QuizQuestionProps> = ({ options, question, callback }) => {
 
-    console.log(options, question);
+    const [selectedAnswer, setSelectedAnswer] = useState("");
+
+    const handleSelection = (e: any) => setSelectedAnswer(e.target.value);
 
     return (
-        <div>
-            <p dangerouslySetInnerHTML={{ __html: question }} />
-            <form onSubmit={callback}>
+        <div className='questionCard'>
+            <h3 className='question' dangerouslySetInnerHTML={{ __html: question }} />
+            <form onSubmit={(e: FormEvent<EventTarget>) => callback(e, selectedAnswer)}>
                 {options.map((option: string, ind: number) => (
                     <div key={ind}>
-                        <label>
-                            <input type="radio" name="opt" value={option} />
-                            <span dangerouslySetInnerHTML={{ __html: option }} />
+                        <label className='label'>
+                            <input
+                                type="radio"
+                                name="opt"
+                                required
+                                value={option}
+                                checked={selectedAnswer === option}
+                                onChange={handleSelection}
+                            />
+                            <span className='option' dangerouslySetInnerHTML={{ __html: option }} />
                         </label>
-                        {/* <button key={ind} dangerouslySetInnerHTML={{ __html: option }} /> */}
                     </div>
                 ))}
-                <button>Submit</button>
+                <div className="btnWrapper">
+                    <button className='nextBtn'>Next</button>
+                </div>
             </form>
         </div>
     )
