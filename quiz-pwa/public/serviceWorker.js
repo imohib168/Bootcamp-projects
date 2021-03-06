@@ -1,9 +1,5 @@
 const CACHE_NAME = "appV1";
 const urlsToCache = [
-    '/static/js/2.8da4c6e9.chunk.js',
-    '/static/js/main.daf550fd.chunk.js',
-    '/static/js/runtime-main.1aecea91.js',
-    '/static/css/main.4326b77b.chunk.css',
     'manifest.json',
     'asset-manifest.json',
     '/index.html',

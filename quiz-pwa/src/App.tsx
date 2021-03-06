@@ -4,8 +4,20 @@ import QuestionCard from './Components/QuestionCard';
 import { quizServices } from './Services/quizServices';
 import { Quiz } from './Types';
 import './App.css';
+import firebase from './firebase';
 
 const App = () => {
+
+    useEffect(() => {
+        const msg = firebase.messaging();
+        msg.requestPermission()
+            .then(() => {
+                return msg.getToken();
+            }).then((data) => {
+                console.log("token", data)
+            })
+            .catch(err => console.log('Error: ', err))
+    })
 
     const [quizQuestions, setQuizQuestions] = useState<Quiz[]>([]);
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -17,14 +29,8 @@ const App = () => {
         const fetchData = async () => {
             const data: Quiz[] = await quizServices(10, 'easy');
             setQuizQuestions(data);
-            // localStorage.setItem("users", JSON.stringify(data));
         }
         fetchData()
-        // .then((resp) => console.log(resp))
-        // .catch(() => {
-        //     let collection = localStorage.getItem('users') || '{}';
-        //     setQuizQuestions(JSON.parse(collection));
-        // })
     }, [])
 
     const handleSubmit = (e: FormEvent<EventTarget>, userAns: string) => {
