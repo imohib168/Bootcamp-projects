@@ -4,19 +4,6 @@ import { Wrapper, BalanceHeading, Amount } from './Balance.styles';
 
 import { contextType } from './../../Types/types';
 
-// type InitialStateObj = {
-//     id: number,
-//     text: string,
-//     amount: number
-//     mode: string
-// }
-
-// export type contextType = {
-//     transactions: InitialStateObj[],
-//     AddTransaction?: (Obj: InitialStateObj) => void,
-//     DeleteTransaction?: (id: number) => void;
-// };
-
 const Balance = () => {
 
     const { transactions } = useContext<contextType>(TransContext);
@@ -36,10 +23,24 @@ const Balance = () => {
 
 
     return (
-        <Wrapper>
-            <BalanceHeading>Your Balance</BalanceHeading>
-            <Amount>${total.toFixed(2)}</Amount>
-        </Wrapper>
+        <>
+            <Wrapper>
+                <BalanceHeading>Your Balance</BalanceHeading>
+                <Amount>${
+                    Math.abs(parseInt(total.toFixed(2)))
+                }
+                </Amount>
+                <p>
+                    {
+                        total < 0 && (
+                            <div>
+                                Your Expenses are greater than your Income
+                            </div>
+                        )
+                    }
+                </p>
+            </Wrapper>
+        </>
     )
 }
 
