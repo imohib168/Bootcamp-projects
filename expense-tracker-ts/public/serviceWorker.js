@@ -9,6 +9,8 @@ const urlsToCache = [
     // 'static/js/bundle.js',
     // 'static/js/vendors~main.chunk.js',
     // 'static/js/main.chunk.js',
+    'static/js/2.2716cb44.chunk.js',
+    '/static/js/main.9727458a.chunk.js',
     'static/media/cover-min.f6a21fa1.jpg',
 ];
 
