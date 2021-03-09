@@ -9,10 +9,6 @@ const urlsToCache = [
     'static/media/cover-min.f6a21fa1.jpg',
     'static/js/2.a0125549.chunk.js',
     'static/js/main.a563d53d.chunk.js'
-    // 'static/js/main.e084154d.chunk.js',
-    // 'static/js/bundle.js',
-    // 'static/js/vendors~main.chunk.js',
-    // 'static/js/main.chunk.js',
 ];
 
 const self = this;
