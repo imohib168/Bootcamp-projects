@@ -28,7 +28,8 @@ const Balance = () => {
                 <BalanceHeading>Your Balance</BalanceHeading>
                 <Amount>${
                     Math.abs(parseInt(total.toFixed(2)))
-                }
+                } {' '}
+                    {total < 0 ? '😞' : '😍'}
                 </Amount>
                 <p>
                     {

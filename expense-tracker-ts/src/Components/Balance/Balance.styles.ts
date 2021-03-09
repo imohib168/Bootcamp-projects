@@ -10,5 +10,6 @@ export const BalanceHeading = styled.p`
     margin-bottom: 4px;
 `;
 export const Amount = styled.h2`
-    color: brown;
+    color: #ffffbf;
+    margin-bottom: 10px;
 `;
