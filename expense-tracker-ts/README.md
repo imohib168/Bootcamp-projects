@@ -1,4 +1,8 @@
+https://expensetrackerpwa168.netlify.app/
+
 [![pas](https://img.shields.io/static/v1?&message=ProgressiveApp.Store&color=74b9ff&style=flat&label=Follow%20Expense%20Tracker%20by%20Mohib%20at)](https://progressiveapp.store/pwa/Expense-Tracker-by-Mohib)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7c2be4de-a943-4655-8d6f-44b0935a556e/deploy-status)](https://app.netlify.com/sites/expensetrackerpwa168/deploys)
 
 # Getting Started with Create React App
 
