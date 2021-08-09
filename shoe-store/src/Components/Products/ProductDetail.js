@@ -7,7 +7,7 @@ const ProductDetail = () => {
 
     const { data, addToCart } = useContext(productContext);
 
-    const { productID } = useParams();
+    const { productID } == useParams();
     const product = data[productID];
     const { name, image, price, description } = product;
 
